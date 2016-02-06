@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "nodemon --ignore ./node-server/shapes node-server/server.js && ember server",
     "test": "ember test"
   },
   "repository": "",
@@ -36,5 +36,14 @@
     "ember-data": "1.13.15",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4"
+  },
+  "dependencies": {
+    "bluebird": "^3.2.2",
+    "busboy": "^0.2.12",
+    "connect-busboy": "0.0.2",
+    "express": "^4.13.4",
+    "fs-extra": "^0.26.5",
+    "shp": "0.0.1",
+    "unzip": "^0.1.11"
   }
 }
