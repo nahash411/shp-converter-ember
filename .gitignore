@@ -15,3 +15,14 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# My sandbox
+sandbox.js
+
+# Shapes
+node-server/shapes/
